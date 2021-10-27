@@ -1,6 +1,13 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ['~']
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.config/fish: fish
 
-
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [echo 'Open README.md to download and install fish shell and plugins']

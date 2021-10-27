@@ -16,3 +16,5 @@
 	user = itsneyoa
 [ghq]
   root = ~/.ghq
+[init]
+	defaultBranch = main
