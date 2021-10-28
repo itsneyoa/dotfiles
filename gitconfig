@@ -18,3 +18,5 @@
   root = ~/.ghq
 [init]
 	defaultBranch = main
+[pull]
+	rebase = false
