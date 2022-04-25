@@ -8,7 +8,6 @@
     ~/.gitconfig:
     ~/.config:
       force: true
-    ~/.nvmrc:
 
 - create:
     - ~/code
