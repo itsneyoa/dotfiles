@@ -1,22 +1,25 @@
+[user]
+	name = Lily Smart
+	email = hello@neyoa.me
+	username = itsneyoa
 [core]
 	excludesfile = ~/.gitignore
 	editor = code --wait
 [push]
 	default = simple
 [color]
-  status = auto
-  diff = auto
-  branch = auto
-  interactive = auto
-  grep = auto
-  ui = auto
+	ui = auto
 [hub]
-  protocol = https
+	protocol = https
 [github]
 	user = itsneyoa
 [ghq]
-  root = ~/.ghq
+	root = ~/.ghq
 [init]
 	defaultBranch = main
 [pull]
 	rebase = false
+[credential "https://github.com"]
+        helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper = !/usr/bin/gh auth git-credential

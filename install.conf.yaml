@@ -2,12 +2,17 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.config/fish: fish
+    ~/.gitconfig:
+    ~/.config:
+      force: true
+    ~/.nvmrc:
+
+- create:
+    - ~/code
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [echo 'Open README.md to download and install fish shell and plugins']
+    - [./install-fisher, Install fisher and all its dependencies]
