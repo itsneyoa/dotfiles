@@ -14,3 +14,8 @@
 ```sh
 ./install
 ```
+
+### [Install Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+
+- JetBrains Mono
+- Hack
