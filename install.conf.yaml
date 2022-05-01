@@ -14,4 +14,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [./install-fisher, Install fisher and all its dependencies]
+    - [fish -c "curl -sL https://git.io/fisher | source && fisher update", Install fisher and all its dependencies]
