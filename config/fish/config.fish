@@ -16,6 +16,18 @@ else
   alias ll "ls -loA"
 end
 
+# If btop is installed use it instead of htop/top
+if type -q btop
+  alias top "btop"
+end
+
+# If bat is installed as batcat use it instead of cat
+if type -q batcat
+  alias cat "batcat"
+else if type -q bat
+  alias cat "bat"
+end
+
 # Shortcut for git
 alias g git
 
