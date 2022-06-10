@@ -28,6 +28,11 @@ else if type -q bat
   alias cat "bat"
 end
 
+# If zoxide(z) is installed use it instead of cd
+if type -q zoxide
+  alias cd "z"
+end
+
 # Shortcut for git
 alias g git
 
@@ -36,6 +41,9 @@ load_nvm > /dev/stderr
 
 # Setup rust
 set PATH $HOME/.cargo/bin $PATH
+
+# Setup zoxide
+zoxide init fish | source
 
 # Setup starship prompt
 starship init fish | source

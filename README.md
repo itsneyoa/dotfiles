@@ -6,8 +6,9 @@
 - [Starship](https://starship.rs/) - Shell prompt customisation
 - [GH](https://cli.github.com/) - Github CLI
 - [FZF](https://github.com/junegunn/fzf) - Fuzzy finder
-- [Exa](https://the.exa.website/#installation) - Better `ls` command
-- [BTOP](https://github.com/aristocratos/btop) - Better `top`/`htop` command
+- [Zoxide](https://github.com/ajeetdsouza/zoxide) - Better `cd`
+- [Exa](https://the.exa.website/#installation) - Better `ls`
+- [BTOP](https://github.com/aristocratos/btop) - Better `top`/`htop`
 - [Mosh](https://mosh.org/) - Better `ssh`
 - [Bat](https://github.com/sharkdp/bat) - Better `cat`
 - [RipGrep](https://github.com/BurntSushi/ripgrep) - Finding text in files
