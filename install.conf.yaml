@@ -9,9 +9,6 @@
     ~/.config:
       force: true
 
-- create:
-    - ~/code
-
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [fish -c "curl -sL https://git.io/fisher | source && fisher update", Install fisher and all its dependencies]
