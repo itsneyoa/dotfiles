@@ -4,33 +4,6 @@ set fish_greeting
 # Use nano as the default text editor
 set -gx EDITOR nano
 
-# If exa is installed, use exa in place of ls, otherwise make aliases for ls
-if type -q exa
-  alias ls "exa -F --icons"
-  alias la "ls -a"
-  alias ll "la -lh --no-filesize --no-time"
-  alias lt "ls -T"
-else
-  alias ls "ls -p -G"
-  alias la "ls -A"
-  alias ll "ls -loA"
-end
-
-# If btop is installed use it instead of htop/top
-if type -q btop
-  alias top "btop"
-end
-
-# If bat is installed as batcat use it instead of cat
-if type -q batcat
-  alias cat "batcat"
-else if type -q bat
-  alias cat "bat"
-end
-
-# Shortcut for git
-alias g git
-
 # Setup node version manager
 load_nvm > /dev/stderr
 
@@ -45,3 +18,19 @@ set TIDE_CONFIG (dirname (status --current-filename))/tide.fish
 if test -f $TIDE_CONFIG
   source $TIDE_CONFIG
 end
+
+# Setup aliases
+set ALIASES (dirname (status --current-filename))/aliases.fish
+if test -f $ALIASES
+  source $ALIASES
+end
+
+# OS specific config loading
+# switch (uname)
+#   case Darwin
+#     source (dirname (status --current-filename))/config-osx.fish
+#   case Linux
+#     source (dirname (status --current-filename))/config-linux.fish
+#   case '*'
+#     source (dirname (status --current-filename))/config-windows.fish
+# end
