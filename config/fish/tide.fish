@@ -19,6 +19,9 @@ set -g tide_prompt_add_newline_before true
 #         Left Side Prompts         #
 
 # context (SSH / Root)
+set -g tide_context_color_default 252525
+set -g tide_context_color_root D7AF00
+set -g tide_context_color_ssh D7AF87
 set -g tide_context_bg_color 252525
 
 # pwd (Current working directory)

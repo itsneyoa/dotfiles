@@ -22,6 +22,9 @@ else if type -q bat
   alias cat "bat"
 end
 
+# Shortcut for cat
+alias c cat
+
 # Shortcut for git
 alias g git
 
