@@ -22,11 +22,16 @@ else if type -q bat
   alias cat "bat"
 end
 
+# If fvm is installed add alias of nvm
+if type -q fnm
+  alias nvm "fnm"
+end
+
 # Shortcut for cat
-alias c cat
+alias c "cat"
 
 # Shortcut for git
-alias g git
+alias g "git"
 
 # Shortcut to reload fish config file
 alias reload "exec fish"

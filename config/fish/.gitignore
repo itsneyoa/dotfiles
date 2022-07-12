@@ -1,5 +1,2 @@
-conf.d/
-completions/
 fish_variables
-functions/*
-!functions/*nvm*
+functions

@@ -4,9 +4,6 @@ set fish_greeting
 # Use nano as the default text editor
 set -gx EDITOR nano
 
-# Setup node version manager
-load_nvm > /dev/stderr
-
 # Setup rust
 set PATH $HOME/.cargo/bin $PATH
 
