@@ -10,18 +10,6 @@ set PATH $HOME/.cargo/bin $PATH
 # Setup zoxide
 zoxide init fish | source
 
-# Setup tide prompt
-set TIDE_CONFIG (dirname (status --current-filename))/tide.fish
-if test -f $TIDE_CONFIG
-  source $TIDE_CONFIG
-end
-
-# Setup aliases
-set ALIASES (dirname (status --current-filename))/aliases.fish
-if test -f $ALIASES
-  source $ALIASES
-end
-
 # OS specific config loading
 # switch (uname)
 #   case Darwin
