@@ -22,11 +22,6 @@ else if type -q bat
   alias cat "bat"
 end
 
-# If fvm is installed add alias of nvm
-if type -q fnm
-  alias nvm "fnm"
-end
-
 # Shortcut for cat
 alias c "cat"
 

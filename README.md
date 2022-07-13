@@ -11,7 +11,7 @@
 - [Mosh](https://mosh.org/) - Better `ssh`
 - [Bat](https://github.com/sharkdp/bat) - Better `cat`
 - [RipGrep](https://github.com/BurntSushi/ripgrep) - Finding text in files
-- [FNM](https://github.com/Schniz/fnm) - Node version manager
+- [nvm.fish](https://github.com/jorgebucaran/nvm.fish) - Node version manager
 - [NCDU](https://dev.yorhel.nl/ncdu) - Check disk usage
 - [Neofetch](https://github.com/dylanaraps/neofetch) - Neofetch
 
@@ -21,7 +21,7 @@ sudo apt-add-repository ppa:fish-shell/release-3 -y
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 
-curl -fsSL https://fnm.vercel.app/install | bash && fnm install --lts
+nvm install lts
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y fish gh fzf zoxide exa btop mosh bat ripgrep ncdu neofetch
