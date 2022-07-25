@@ -10,6 +10,9 @@ set PATH $HOME/.cargo/bin $PATH
 # Setup zoxide
 zoxide init fish | source
 
+# Setup lts as default node version
+set nvm_default_version lts
+
 # OS specific config loading
 # switch (uname)
 #   case Darwin

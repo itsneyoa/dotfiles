@@ -12,3 +12,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [fish -c "curl -sL https://git.io/fisher | source && fisher update", Install fisher and all its dependencies]
+    - [fish -c "nvm install lts", Install the latest Node.js version]
