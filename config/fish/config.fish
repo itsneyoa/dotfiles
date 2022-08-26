@@ -7,6 +7,9 @@ set -gx EDITOR nano
 # Setup rust
 set PATH $HOME/.cargo/bin $PATH
 
+# Set go path
+set GOPATH $HOME/code/go
+
 # Setup zoxide
 zoxide init fish | source
 
