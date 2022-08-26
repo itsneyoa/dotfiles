@@ -3,17 +3,16 @@ set -g tide_left_prompt_frame_enabled true
 set -g tide_right_prompt_frame_enabled false
 set -g tide_left_prompt_items context pwd git newline
 set -g tide_right_prompt_items shlvl status cmd_duration node jobs time
-set -g tide_prompt_add_newline_before false
 set -g tide_prompt_pad_items true
-set -g tide_left_prompt_prefix \ue0b6
-set -g tide_left_prompt_separator_diff_color \ue0b0
-set -g tide_left_prompt_separator_same_color \ue0b1
-set -g tide_left_prompt_suffix \ue0b0
-set -g tide_right_prompt_prefix \ue0b2
-set -g tide_right_prompt_separator_diff_color \ue0b2
-set -g tide_right_prompt_separator_same_color \ue0b3
-set -g tide_right_prompt_suffix \ue0b4
-set -g tide_prompt_icon_connection ─
+set -g tide_left_prompt_prefix 
+set -g tide_left_prompt_separator_diff_color 
+set -g tide_left_prompt_separator_same_color 
+set -g tide_left_prompt_suffix 
+set -g tide_right_prompt_prefix 
+set -g tide_right_prompt_separator_diff_color 
+set -g tide_right_prompt_separator_same_color 
+set -g tide_right_prompt_suffix 
+set -g tide_prompt_icon_connection \x20
 set -g tide_prompt_add_newline_before true
 
 #         Left Side Prompts         #
@@ -42,7 +41,7 @@ set -g tide_git_color_staged 000000
 set -g tide_git_color_stash 000000
 set -g tide_git_color_untracked 000000
 set -g tide_git_color_upstream 000000
-set -g tide_git_icon \ue0a0
+set -g tide_git_icon 
 
 
 #         Right Side Prompts         #
@@ -89,28 +88,23 @@ set -g tide_character_vi_icon_default ❮
 set -g tide_character_vi_icon_replace ▶
 set -g tide_character_vi_icon_visual V
 set -g tide_chruby_icon 
-set -g tide_cmd_duration_icon \uf252
-set -g tide_docker_icon \uf308
-set -g tide_git_icon \uf1d3
-set -g tide_go_icon \ue627
-set -g tide_java_icon \ue256
-set -g tide_jobs_icon \uf013
-set -g tide_kubectl_icon \u2388
-set -g tide_node_icon \u2b22
-set -g tide_os_icon \uf179
-set -g tide_php_icon \ue608
-set -g tide_private_mode_icon \ufaf8
-set -g tide_prompt_icon_connection \x20
-set -g tide_pwd_icon \uf07c
-set -g tide_pwd_icon_home \uf015
-set -g tide_pwd_icon_unwritable \uf023
-set -g tide_rustc_icon \ue7a8
-set -g tide_shlvl_icon \uf120
-set -g tide_status_icon \u2714
-set -g tide_status_icon_failure \u2718
+set -g tide_cmd_duration_icon 
+set -g tide_docker_icon 
+set -g tide_go_icon 
+set -g tide_java_icon 
+set -g tide_jobs_icon 
+set -g tide_kubectl_icon ⎈
+set -g tide_node_icon ⬢
+set -g tide_os_icon 
+set -g tide_php_icon 
+set -g tide_private_mode_icon 﫸
+set -g tide_pwd_icon 
+set -g tide_pwd_icon_home 
+set -g tide_pwd_icon_unwritable 
+set -g tide_rustc_icon 
+set -g tide_toolbox_icon ⬢
+set -g tide_virtual_env_icon 
 set -g tide_terraform_icon \x1d
-set -g tide_toolbox_icon \u2b22
 set -g tide_vi_mode_icon_default \x1d
 set -g tide_vi_mode_icon_replace \x1d
 set -g tide_vi_mode_icon_visual \x1d
-set -g tide_virtual_env_icon \ue73c
