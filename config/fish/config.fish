@@ -12,7 +12,6 @@ zoxide init fish | source
 
 # Setup lts as default node version
 set nvm_default_version lts
-nvm use default
 
 # OS specific config loading
 # switch (uname)
