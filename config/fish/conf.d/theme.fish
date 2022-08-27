@@ -21,8 +21,8 @@ set fish_color_user brgreen
 set fish_color_host normal
 
 # Pager
-set fish_pager_color_prefix yellow --bold --underline
-set fish_pager_color_completion yellow
-set fish_pager_color_description bryellow
-set fish_pager_color_selected_background --background=magenta
+set fish_pager_color_prefix magenta --bold --underline
+set fish_pager_color_completion magenta
+set fish_pager_color_description yellow
+set fish_pager_color_selected_background --background=yellow
 set fish_pager_color_progress white --background=brmagenta
