@@ -7,6 +7,9 @@ set -gx EDITOR nano
 # Setup go
 set -gx GOPATH $HOME/Code/go
 
+# Setup rust
+fish_add_path -gP $HOME/.cargo/bin
+
 # Setup zoxide
 zoxide init fish | source
 
