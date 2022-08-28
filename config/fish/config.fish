@@ -5,13 +5,13 @@ set fish_greeting
 set -gx EDITOR nano
 
 # Setup go
-set -Ux GOPATH $HOME/Code/go
+set -gx GOPATH $HOME/Code/go
 
 # Setup zoxide
 zoxide init fish | source
 
 # Setup lts as default node version
-set nvm_default_version lts
+set -gx nvm_default_version lts
 
 # OS specific config loading
 # switch (uname)
