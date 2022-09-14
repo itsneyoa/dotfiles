@@ -1,6 +1,6 @@
 ## Shell setup
 
-### Install fish shell and starship
+### Install dependencies
 
 - [Fish shell](https://fishshell.com/) - The shell itself
 - [GH](https://cli.github.com/) - Github CLI
@@ -15,6 +15,12 @@
 - [NCDU](https://dev.yorhel.nl/ncdu) - Check disk usage
 - [Neofetch](https://github.com/dylanaraps/neofetch) - Neofetch
 
+### Package manager specifics
+
+<details>
+<summary>Ubuntu (apt)</summary>
+<p>
+
 ```sh
 sudo apt-add-repository ppa:fish-shell/release-3 -y
 
@@ -27,6 +33,19 @@ sudo apt autoremove -y
 
 sudo chsh -s $(which fish) $LOGNAME
 ```
+
+</details>
+
+<details>
+<summary>Arch (pacman)</summary>
+<p>
+
+```sh
+sudo pacman -S fish github-cli fzf zoxide exa btop mosh bat ripgrep ncdu neofetch
+```
+
+</p>
+</details>
 
 ### Run dotbot
 
