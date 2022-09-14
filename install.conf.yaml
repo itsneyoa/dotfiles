@@ -2,11 +2,17 @@
     link:
       relink: true
 
-- clean: ['~', '~/.config']
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
 
 - link:
     ~/.gitconfig:
     ~/.config:
+      glob: true
+      path: config/*
       force: true
 
 - shell:
