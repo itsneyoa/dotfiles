@@ -2,7 +2,7 @@
 set tide_left_prompt_frame_enabled true
 set tide_right_prompt_frame_enabled false
 set tide_left_prompt_items context pwd git newline
-set tide_right_prompt_items shlvl private_mode status cmd_duration docker node go rustc jobs time
+set tide_right_prompt_items shlvl private_mode status cmd_duration docker node go rustc virtual_env jobs time
 set tide_prompt_pad_items true
 set tide_left_prompt_prefix 
 set tide_left_prompt_separator_diff_color 
@@ -96,6 +96,11 @@ set tide_rustc_bg_color F74C00
 set tide_rustc_color 000000
 set tide_rustc_icon 
 
+# virtual_env (Current python venv)
+set tide_virtual_env_bg_color FFD43B
+set tide_virtual_env_color 000000
+set tide_virtual_env_icon 
+
 # jobs (Are there background tasks running)
 set tide_jobs_bg_color 444444
 set tide_jobs_color 4E9A06
@@ -117,7 +122,6 @@ set tide_java_icon 
 set tide_kubectl_icon ⎈
 set tide_php_icon 
 set tide_toolbox_icon ⬢
-set tide_virtual_env_icon 
 set tide_os_bg_color EFEFEF
 set tide_os_color 080808
 set tide_terraform_icon \x1d
