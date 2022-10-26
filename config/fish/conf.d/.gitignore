@@ -1,5 +1,4 @@
 *.fish
 
 !aliases.fish
-!tide.fish
 !theme.fish
