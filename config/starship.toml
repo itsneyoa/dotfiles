@@ -58,7 +58,7 @@ symbol = " "
 disabled = false
 symbol = ""
 style = "fg:#FFBF00 bg:#202426"
-format = "[](fg:#FFBF00)[ $symbol $shlvl ]($style)[](fg:#FFBF00 inverted)"
+format = "[](fg:#202426)[ $symbol $shlvl ]($style)[](fg:#202426 inverted)"
 
 [status]
 disabled = false
@@ -101,7 +101,7 @@ format = "[](fg:#FFD43B)[ $symbol $version( \\($virtualenv\\)) ]($style)[]
 [jobs]
 symbol = ""
 style = "fg:#4E9A06 bg:#444444"
-format = "[](fg:#4E9A06)[ $symbol $number ]($style)[](fg:#4E9A06 inverted)"
+format = "[](fg:#444444)[ $symbol $number ]($style)[](fg:#444444 inverted)"
 
 [time]
 disabled = false
