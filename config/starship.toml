@@ -1,0 +1,110 @@
+format = """
+[╭─](fg:#6C6C6C)\
+$username\
+$directory\
+$git_branch\
+$git_status\
+\
+$fill\
+\
+$shlvl\
+$status\
+$cmd_duration\
+$docker_context\
+$nodejs\
+$golang\
+$rust\
+$python\
+$jobs\
+$time
+[╰─](fg:#6C6C6C) \
+"""
+
+add_newline = true
+
+# You can also replace your username with a neat symbol like  to save some space
+[username]
+show_always = true
+style_user = "bg:#252525"
+style_root = "fg:#ff0000 bg:#252525"
+format = "[](fg:#252525)[ $user ]($style)[](fg:#252525)"
+
+[directory]
+read_only = "  "
+style = "fg:#5EFDD6 bg:#444444"
+read_only_style = "fg:#ff0000 bg:#444444"
+format = "[](fg:#444444 inverted)[$read_only]($read_only_style)[ $path ]($style)[](fg:#444444)"
+truncation_symbol = "…/"
+truncation_length = 10
+truncate_to_repo = false
+use_os_path_sep = false
+fish_style_pwd_dir_length = 4
+
+[git_branch]
+symbol = ""
+style = "fg:#000000 bg:#f05033"
+format = "[](fg:#f05033 inverted)[ $symbol $branch ]($style)"
+
+[git_status]
+style = "fg:#000000 bg:#f05033"
+format = "[$all_status$ahead_behind ]($style)[](fg:#f05033)"
+
+
+[fill]
+symbol = " "
+
+
+[shlvl]
+disabled = false
+symbol = ""
+style = "fg:#FFBF00 bg:#202426"
+format = "[](fg:#FFBF00)[ $symbol $shlvl ]($style)[](fg:#FFBF00 inverted)"
+
+[status]
+disabled = false
+symbol = "[✘ $status](fg:#CC0000 bg:#292E30)"
+success_symbol = "[✔](fg:#4E9A06 bg:#292E30)"
+style = "bg:#292E30"
+format = "[](fg:#292E30)[ $symbol ]($style)[](fg:#292E30 inverted)"
+
+[cmd_duration]
+style = "fg:#000000 bg:#C4A000"
+format = "[](fg:#C4A000)[  $duration ]($style)[](fg:#C4A000 inverted)"
+min_time = 3000
+
+[docker_context]
+symbol = " "
+style = "fg:#000000 bg:#2496ED"
+format = "[](fg:#2496ED)[ $symbol $context ]($style)[](fg:#2496ED inverted)"
+only_with_files = false
+
+[nodejs]
+symbol = ""
+style = "fg:#2E3436 bg:#68A063"
+format = "[](fg:#68A063)[ $symbol ${version} ]($style)[](fg:#68A063 inverted)"
+
+[golang]
+symbol = ""
+style = "fg:#000000 bg:#00ACD7"
+format = "[](fg:#00ACD7)[ $symbol $version ]($style)[](fg:#00ACD7 inverted)"
+
+[rust]
+symbol = ""
+style = "fg:#000000 bg:#F74C00"
+format = "[](fg:#F74C00)[ $symbol $version ]($style)[](fg:#F74C00 inverted)"
+
+[python]
+symbol = ""
+style = "fg:#000000 bg:#FFD43B"
+format = "[](fg:#FFD43B)[ $symbol $version( \\($virtualenv\\)) ]($style)[](fg:#FFD43B inverted)"
+
+[jobs]
+symbol = ""
+style = "fg:#4E9A06 bg:#444444"
+format = "[](fg:#4E9A06)[ $symbol $number ]($style)[](fg:#4E9A06 inverted)"
+
+[time]
+disabled = false
+time_format = "%-I:%M %p"
+style = "fg:#000000 bg:#D3D7CF"
+format = "[](fg:#D3D7CF)[ $time ]($style)[](fg:#D3D7CF)"

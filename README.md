@@ -14,6 +14,7 @@
 - [nvm.fish](https://github.com/jorgebucaran/nvm.fish) - Node version manager
 - [NCDU](https://dev.yorhel.nl/ncdu) - Check disk usage
 - [Neofetch](https://github.com/dylanaraps/neofetch) - Neofetch
+- [Starship](https://starship.rs/) - Prompt
 
 ### Package manager specifics
 

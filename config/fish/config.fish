@@ -16,6 +16,9 @@ zoxide init fish | source
 # Setup lts as default node version
 set -gx nvm_default_version lts
 
+# Initialise Starship
+starship init fish | source
+
 # OS specific config loading
 # switch (uname)
 #   case Darwin
