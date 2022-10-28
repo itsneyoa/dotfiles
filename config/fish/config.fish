@@ -13,9 +13,6 @@ fish_add_path -gP $HOME/.cargo/bin
 # Setup zoxide
 zoxide init fish | source
 
-# Setup lts as default node version
-set -gx nvm_default_version lts
-
 # Initialise Starship
 starship init fish | source
 
