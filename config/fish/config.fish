@@ -11,10 +11,14 @@ set -gx GOPATH $HOME/Code/go
 fish_add_path -gP $HOME/.cargo/bin
 
 # Setup zoxide
-zoxide init fish | source
+if type -q zoxide
+    zoxide init fish | source
+end
 
 # Initialise Starship
-starship init fish | source
+if type -q starship
+    starship init fish | source
+end
 
 # OS specific config loading
 # switch (uname)

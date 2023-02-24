@@ -1,19 +1,21 @@
 format = """
 [╭─](fg:#6C6C6C)\
 $username\
+$hostname\
 $directory\
 $git_branch\
 $git_status\
+$vagrant\
+$docker_context\
 \
 $fill\
 \
 $shlvl\
 $status\
 $cmd_duration\
-$docker_context\
 $nodejs\
-$golang\
 $rust\
+$golang\
 $python\
 $jobs\
 $time
@@ -25,9 +27,14 @@ add_newline = true
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#252525"
-style_root = "fg:#ff0000 bg:#252525"
-format = "[](fg:#252525)[ $user ]($style)[](fg:#252525)"
+style_user = "bg:#2b2b2b"
+style_root = "fg:#ff0000 bg:#2b2b2b bold"
+format = "[](fg:#2b2b2b)[ $user ]($style)[](fg:#2b2b2b)"
+
+[hostname]
+ssh_symbol = " "
+format = "[](fg:#383838 inverted)[ $ssh_symbol$hostname ]($style)[](fg:#383838)"
+style = "bg:#383838 fg:#22CA87 bold"
 
 [directory]
 read_only = "  "
@@ -49,6 +56,15 @@ format = "[](fg:#f05033 inverted)[ $symbol $branch ]($style)"
 style = "fg:#000000 bg:#f05033"
 format = "[$all_status$ahead_behind ]($style)[](fg:#f05033)"
 
+[vagrant]
+style = "bg:#1244F4 fg:#ffffff"
+format = "[](fg:#1244F4 inverted)[ $symbol $version ]($style)[](fg:#1244F4)"
+symbol = "󰆧"
+
+[docker_context]
+symbol = " "
+style = "fg:#000000 bg:#2496ED"
+format = "[](fg:#2496ED inverted)[ $symbol $context ]($style)[](fg:#2496ED)"
 
 [fill]
 symbol = " "
@@ -71,12 +87,6 @@ format = "[](fg:#292E30)[ $symbol ]($style)[](fg:#292E30 inverted)"
 style = "fg:#000000 bg:#C4A000"
 format = "[](fg:#C4A000)[  $duration ]($style)[](fg:#C4A000 inverted)"
 min_time = 3000
-
-[docker_context]
-symbol = " "
-style = "fg:#000000 bg:#2496ED"
-format = "[](fg:#2496ED)[ $symbol $context ]($style)[](fg:#2496ED inverted)"
-only_with_files = false
 
 [nodejs]
 symbol = ""
