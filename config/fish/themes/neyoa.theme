@@ -1,28 +1,28 @@
-# Normal
-fish_color_normal normal
-fish_color_command brcyan
-fish_color_quote green
-fish_color_redirection magenta
-fish_color_end bryellow
-fish_color_keyword bryellow
-fish_color_error red
-fish_color_param brmagenta
-fish_color_valid_path --underline
-fish_color_option 
-fish_color_comment 545454
-fish_color_operator brwhite
-fish_color_escape brwhite
-fish_color_autosuggestion brblack
-
-# Overwritten by tide
+fish_color_autosuggestion 353535
+fish_color_command green
+fish_color_comment 353535
 fish_color_cwd green
 fish_color_cwd_root red
-fish_color_user brgreen
+fish_color_end brblack
+fish_color_error red
+fish_color_escape yellow
 fish_color_host normal
+fish_color_operator blue
+fish_color_param B2CCD6
+fish_color_quote yellow
+fish_color_redirection cyan
+fish_color_status red
+fish_color_user brgreen
+fish_color_valid_path \x2d\x2dunderline
 
-# Pager
-fish_pager_color_prefix magenta --bold --underline
-fish_pager_color_completion magenta
-fish_pager_color_description yellow
-fish_pager_color_selected_background --background=yellow
-fish_pager_color_progress white --background=brmagenta
+fish_color_cancel \x2dr
+fish_color_history_current \x2d\x2dbold
+fish_color_match \x2d\x2dbackground\x3dbrblue
+
+fish_color_search_match bryellow\x1e\x2d\x2dbackground\x3d353535
+fish_color_selection white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3d353535
+
+fish_pager_color_completion normal
+fish_pager_color_description yellow\x1e\x2d\x2ddim
+fish_pager_color_prefix white\x1e\x2d\x2dbold
+fish_pager_color_progress brwhite\x1e\x2d\x2dbackground\x3dcyan
