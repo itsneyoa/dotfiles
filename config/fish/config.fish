@@ -20,6 +20,11 @@ if type -q starship
     starship init fish | source
 end
 
+# Set theme
+if test -e $HOME/.config/fish/themes/neyoa.theme
+    fish_config theme choose neyoa
+end
+
 # OS specific config loading
 # switch (uname)
 #   case Darwin

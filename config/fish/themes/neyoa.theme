@@ -1,0 +1,28 @@
+# Normal
+fish_color_normal normal
+fish_color_command brcyan
+fish_color_quote green
+fish_color_redirection magenta
+fish_color_end bryellow
+fish_color_keyword bryellow
+fish_color_error red
+fish_color_param brmagenta
+fish_color_valid_path --underline
+fish_color_option 
+fish_color_comment 545454
+fish_color_operator brwhite
+fish_color_escape brwhite
+fish_color_autosuggestion brblack
+
+# Overwritten by tide
+fish_color_cwd green
+fish_color_cwd_root red
+fish_color_user brgreen
+fish_color_host normal
+
+# Pager
+fish_pager_color_prefix magenta --bold --underline
+fish_pager_color_completion magenta
+fish_pager_color_description yellow
+fish_pager_color_selected_background --background=yellow
+fish_pager_color_progress white --background=brmagenta
