@@ -22,6 +22,11 @@ else if type -q bat
   alias cat "bat"
 end
 
+# Shortcut to use radian instead of R
+if type -q radian
+  alias r "radian"
+end
+
 # Shortcut for cat
 alias c "cat"
 

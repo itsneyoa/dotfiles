@@ -18,5 +18,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [curl -sS https://starship.rs/install.sh | sh -s -- -y, Installing starship]
     - [fish -c "type -q fisher || curl -sL https://git.io/fisher | source && fisher update", Install fisher and all its dependencies]

@@ -5,4 +5,4 @@ if ! command -v brew &> /dev/null; then
     source <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 fi
 
-brew install fish gh fzf zoxide eza btop mosh bat ripgrep ncdu neofetch
+brew install fish gh fzf zoxide eza btop mosh bat ripgrep ncdu neofetch helix hyperfine cloc starship
