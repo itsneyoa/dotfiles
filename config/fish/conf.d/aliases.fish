@@ -1,6 +1,6 @@
-# If exa is installed, use exa in place of ls, otherwise make aliases for ls
-if type -q exa
-  alias ls "exa -F --icons"
+# If eza is installed, use eza in place of ls, otherwise make aliases for ls
+if type -q eza
+  alias ls "eza -F --icons"
   alias la "ls -a"
   alias ll "la -lh --no-filesize --no-time"
   alias lt "ls -T"

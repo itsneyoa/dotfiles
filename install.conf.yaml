@@ -10,6 +10,7 @@
 
 - link:
     ~/.gitconfig:
+      force: true
     ~/.config:
       glob: true
       path: config/*
@@ -17,5 +18,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [curl -sS https://starship.rs/install.sh | sh -s -- -y, Installing starship]
     - [fish -c "type -q fisher || curl -sL https://git.io/fisher | source && fisher update", Install fisher and all its dependencies]
-    - [fish -c "nvm install lts && set -U nvm_default_version lts", Install the latest Node.js version]
