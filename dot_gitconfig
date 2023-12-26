@@ -7,6 +7,9 @@
 	editor = hx
 	pager = delta
 
+[help]
+	autocorrect = true
+
 [interactive]
 	diffFilter = delta --color-only
 
@@ -21,6 +24,9 @@
 [diff]
     colorMoved = default
 
+[pull]
+	rebase = true
+	
 [credential "https://github.com"]
 	helper = !$(which gh) auth git-credential
 
