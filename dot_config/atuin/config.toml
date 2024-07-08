@@ -1,0 +1,6 @@
+auto_sync = true
+dialect = "uk"
+enter_accept = false
+show_help = false
+sync_frequency = "5m"
+update_check = false

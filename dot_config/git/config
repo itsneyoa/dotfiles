@@ -1,0 +1,16 @@
+[user]
+	email = "hello@neyoa.me"
+	name = "Lily Smart"
+
+[init]
+	defaultBranch = "main"
+
+[diff]
+	external = "difft --color auto --background light --display side-by-side"
+
+[url "https://github.com/"]
+	insteadOf = "gh:"
+	insteadOf = "github:"
+
+[credential "https://github.com"]
+	helper = "gh auth git-credential"

@@ -1,28 +1,33 @@
-# Theme
 theme = "ayu_evolve"
 
-# Editor
 [editor]
 true-color = true
 
-[editor.statusline]
-left = ["mode", "spinner"]
-center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
-separator = "|"
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
 
 [editor.lsp]
 display-inlay-hints = true
 
-[editor.cursor-shape]
-normal = "block"
-insert = "bar"
-select = "underline"
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = [
+    "diagnostics",
+    "selections",
+    "position",
+    "file-encoding",
+    "file-line-ending",
+    "file-type",
+]
+separator = "|"
 
-# Keybinds
+[editor.statusline.mode]
+insert = "INSERT"
+normal = "NORMAL"
+select = "SELECT"
 
-[keys.insert]
-j = { k = "normal_mode" }
+[keys.insert.j]
+k = "normal_mode"

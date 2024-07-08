@@ -16,7 +16,9 @@ $cmd_duration\
 $nodejs\
 $rust\
 $golang\
+$zig\
 $python\
+$buf\
 $jobs\
 $time
 [╰─](fg:#6C6C6C) \
@@ -24,7 +26,6 @@ $time
 
 add_newline = true
 
-# You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
 style_user = "bg:#2b2b2b"
@@ -66,6 +67,7 @@ symbol = " "
 style = "fg:#000000 bg:#2496ED"
 format = "[](fg:#2496ED inverted)[ $symbol $context ]($style)[](fg:#2496ED)"
 
+
 [fill]
 symbol = " "
 
@@ -93,20 +95,30 @@ symbol = ""
 style = "fg:#2E3436 bg:#68A063"
 format = "[](fg:#68A063)[ $symbol ${version} ]($style)[](fg:#68A063 inverted)"
 
-[golang]
-symbol = ""
-style = "fg:#000000 bg:#00ACD7"
-format = "[](fg:#00ACD7)[ $symbol $version ]($style)[](fg:#00ACD7 inverted)"
-
 [rust]
 symbol = ""
 style = "fg:#000000 bg:#F74C00"
 format = "[](fg:#F74C00)[ $symbol $version ]($style)[](fg:#F74C00 inverted)"
 
+[golang]
+symbol = ""
+style = "fg:#000000 bg:#00ACD7"
+format = "[](fg:#00ACD7)[ $symbol $version ]($style)[](fg:#00ACD7 inverted)"
+
+[zig]
+symbol = "⚡"
+style = "fg:#000000 bg:#f7a41d"
+format = "[](fg:#f7a41d)[ $symbol $version ]($style)[](fg:#f7a41d inverted)"
+
 [python]
 symbol = ""
 style = "fg:#000000 bg:#FFD43B"
 format = "[](fg:#FFD43B)[ $symbol $version( \\($virtualenv\\)) ]($style)[](fg:#FFD43B inverted)"
+
+[buf]
+symbol = " "
+style = "fg:#76e1ff bg:#151dde"
+format = "[](fg:#151dde)[ $symbol $version ]($style)[](fg:#151dde inverted)"
 
 [jobs]
 symbol = ""

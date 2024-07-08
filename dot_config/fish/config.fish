@@ -1,31 +1,65 @@
-# No "Welcome to fish shell" on session start
+# Disable 'Welcome to fish shell'
 set fish_greeting
 
-# Use nano as the default text editor
+# Set theme
+fish_config theme choose "ayu Dark"
+
+# Helix as default editor with Nano as fallback
 if type -q hx
     set -gx EDITOR hx
 else
     set -gx EDITOR nano
 end
 
-# Setup rust
-fish_add_path -gP $HOME/.cargo/bin
-
-# Setup fnm
-if type -q fnm
-    fnm env | source
-    set -gx FNM_COREPACK_ENABLED true
-end
-
-# Setup zoxide
-if type -q zoxide
-    zoxide init fish | source
-end
-
-# Initialise Starship
-if type -q starship
+# Shell integrations
+zoxide init fish | source
+fzf --fish | source
+fnm env --use-on-cd --corepack-enabled | source
+if test "$TERM" != dumb
     starship init fish | source
 end
+atuin init fish | source
+# direnv hook fish | source
 
-# Set theme
-fish_config theme choose "ayu Dark"
+# Abbreviations and aliases
+abbr --add g git
+abbr --add c cat
+alias reload 'exec fish'
+
+if type -q eza
+    alias ls "eza -F --icons"
+    alias la "ls -a"
+    alias ll "la -lh --no-filesize --no-time"
+    alias lt "ls -T"
+else
+    alias ls "ls -p -G"
+    alias la "ls -A"
+    alias ll "ls -loA"
+end
+
+if type -q btop
+    alias top btop
+end
+
+if type -q batcat
+    alias cat batcat
+else if type -q bat
+    alias cat bat
+end
+
+if type -q radian
+    alias r radian
+end
+
+if type -q fnm
+    alias nvm fnm
+end
+
+# Run onefetch on new directory
+function __run_onefetch_on_new_directory --on-event fish_prompt
+  set current_repository (git rev-parse --show-toplevel 2> /dev/null)
+  if [ "$current_repository" ] && [ "$current_repository" != "$last_repository" ]
+    onefetch
+  end
+  set -gx last_repository $current_repository
+end

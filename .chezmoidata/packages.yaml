@@ -1,48 +1,52 @@
 packages:
   darwin:
     brews:
-      - "bat"
-      - "btop"
-      - "cargo-nextest"
-      - "chezmoi"
-      - "dive"
-      - "eza"
-      - "fd"
-      - "ffmpeg"
-      - "figlet"
-      - "fnm"
-      - "fzf"
-      - "gh"
-      - "git"
-      - "gnupg"
-      - "helix"
-      - "hexyl"
-      - "hyperfine"
-      - "just"
-      - "kondo"
-      - "lazygit"
-      - "lf"
-      - "llvm"
-      - "lolcat"
-      - "mosh"
-      - "ncdu"
-      - "neofetch"
-      - "nmap"
-      - "nushell"
-      - "parallel"
-      - "python@3.10"
-      - "r"
-      - "railway"
-      - "ripgrep"
-      - "rsync"
-      - "sl"
-      - "starship"
-      - "tokei"
-      - "trunk"
-      - "wget"
-      - "zellij"
-      - "zig"
-      - "zoxide"
+      - "atuin" # Shell history
+      - "bat" # Better `cat`
+      - "bore-cli" # Tunnel to localhost
+      - "btop" # Better `top`
+      - "cargo-nextest" # Cargo plugin for running tests in parallel
+      - "chezmoi" # Dotfile manager
+      - "difftastic" # Better `diff`
+      - "dive" # Docker image explorer
+      - "dust" # Disk usage statistics
+      - "eza" # Better `ls`
+      - "fd" # Better `find`
+      - "ffmpeg" # Video processing
+      - "fnm" # Node.js version manager
+      - "fzf" # Fuzzy finder
+      - "gh" # GitHub CLI
+      - "git" # Version control
+      - "gnupg" # Encryption
+      - "helix" # Helix editor
+      - "hexyl" # Hex viewer
+      - "hyperfine" # Benchmarking tool
+      - "just" # Justfile runner
+      - "jq" # JSON processor
+      - "kondo" # Dependency / build artifact cleaner
+      - "lazygit" # Git terminal UI
+      - "lf" # Terminal file manager
+      - "llvm" # Compiler infrastructure
+      - "mold" # Faster linker
+      - "mosh" # Mobile shell
+      - "neofetch" # System information
+      - "nmap" # Network scanner
+      - "ntfy" # Notification system
+      - "onefetch" # Git information display
+      - "parallel" # Parallel command runner
+      - "pipes-rs" # Pipes screensaver
+      - "railway" # Railway CLI
+      - "ripgrep" # Better `grep`
+      - "rsync" # File synchronization
+      - "sl" # Train animation
+      - "starship" # Shell prompt
+      - "tlrc" # Client for better manpages
+      - "tokei" # Code statistics
+      - "trunk" # WebAssembly toolchain
+      - "wget" # File downloader
+      - "zellij" # Terminal multiplexer
+      - "zig" # Zig language
+      - "zoxide" # Directory jumper
     casks:
       - "flutter"
       - "hashicorp-vagrant"
@@ -51,3 +55,5 @@ packages:
       - "stats"
       - "virtualbox"
       - "homebrew/cask-fonts/font-jetbrains-mono-nerd-font"
+      - "zed"
+      - "rstudio"
