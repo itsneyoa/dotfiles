@@ -55,11 +55,14 @@ if type -q fnm
     alias nvm fnm
 end
 
+# Add local bin
+fish_add_path -g ~/.local/bin
+
 # Run onefetch on new directory
 function __run_onefetch_on_new_directory --on-event fish_prompt
-  set current_repository (git rev-parse --show-toplevel 2> /dev/null)
-  if [ "$current_repository" ] && [ "$current_repository" != "$last_repository" ]
-    onefetch
-  end
-  set -gx last_repository $current_repository
+    set current_repository (git rev-parse --show-toplevel 2> /dev/null)
+    if [ "$current_repository" ] && [ "$current_repository" != "$last_repository" ]
+        onefetch
+    end
+    set -gx last_repository $current_repository
 end
