@@ -11,7 +11,7 @@
     "copilot": false
   },
   "base_keymap": "VSCode",
-  "theme": "Ayu Drak",
+  "theme": "Zedokai Darker (Filter Spectrum)",
   "telemetry": {
     "metrics": false
   },
@@ -19,7 +19,7 @@
   "autosave": "off",
   "ensure_final_newline_on_save": true,
   "format_on_save": "on",
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMonoNFP-Regular",
   "buffer_font_size": 12,
   "confirm_quit": false,
   "lsp": {
