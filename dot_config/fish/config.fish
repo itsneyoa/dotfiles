@@ -12,18 +12,21 @@ else
 end
 
 # Shell integrations
-zoxide init fish | source
-fzf --fish | source
-fnm env --use-on-cd --corepack-enabled | source
-if test "$TERM" != dumb
-    starship init fish | source
+if status --is-interactive
+    zoxide init fish | source
+    fzf --fish | source
+    fnm env --use-on-cd --corepack-enabled | source
+    if test "$TERM" != dumb
+        starship init fish | source
+    end
+    atuin init fish | source
 end
-atuin init fish | source
 # direnv hook fish | source
 
 # Abbreviations and aliases
 abbr --add g git
 abbr --add c cat
+abbr --add j just
 alias reload 'exec fish'
 
 if type -q eza
@@ -54,9 +57,6 @@ end
 if type -q fnm
     alias nvm fnm
 end
-
-# Add local bin
-fish_add_path -g ~/.local/bin
 
 # Run onefetch on new directory
 function __run_onefetch_on_new_directory --on-event fish_prompt
