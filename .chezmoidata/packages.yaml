@@ -3,14 +3,17 @@ packages:
     brews:
       - "atuin" # Shell history
       - "bat" # Better `cat`
+      - "bore-cli" # Tunnel to localhost
       - "btop" # Better `top`
       - "chezmoi" # Dotfile manager
+      - "deno" # Javascript runtime
       - "difftastic" # Better `diff`
       - "dive" # Docker image explorer
       - "dust" # Disk usage statistics
       - "eza" # Better `ls`
       - "fd" # Better `find`
       - "ffmpeg" # Video processing
+      - "flyctl" # Fly.io CLI
       - "fnm" # Node.js version manager
       - "fzf" # Fuzzy finder
       - "gh" # GitHub CLI
@@ -22,7 +25,6 @@ packages:
       - "just" # Justfile runner
       - "jq" # JSON processor
       - "kondo" # Dependency / build artifact cleaner
-      - "lazygit" # Git terminal UI
       - "lf" # Terminal file manager
       - "llvm" # Compiler infrastructure
       - "mold" # Faster linker
@@ -36,6 +38,7 @@ packages:
       - "railway" # Railway CLI
       - "ripgrep" # Better `grep`
       - "rsync" # File synchronization
+      - "sevenzip" # Archiver
       - "sl" # Train animation
       - "starship" # Shell prompt
       - "tlrc" # Client for better manpages
