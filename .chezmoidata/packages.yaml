@@ -12,7 +12,7 @@ packages:
       - "dust" # Disk usage statistics
       - "eza" # Better `ls`
       - "fd" # Better `find`
-      - "ffmpeg" # Video processing
+      - "fish" # Fish shell
       - "flyctl" # Fly.io CLI
       - "fnm" # Node.js version manager
       - "fzf" # Fuzzy finder
@@ -33,8 +33,7 @@ packages:
       - "nmap" # Network scanner
       - "ntfy" # Notification system
       - "onefetch" # Git information display
-      - "parallel" # Parallel command runner
-      - "pipes-rs" # Pipes screensaver
+      # - "parallel" # Parallel command runner
       - "railway" # Railway CLI
       - "ripgrep" # Better `grep`
       - "rsync" # File synchronization
@@ -49,13 +48,12 @@ packages:
       - "zig" # Zig language
       - "zoxide" # Directory jumper
     casks:
-      - "flutter"
-      - "hashicorp-vagrant"
+      - "vagrant"
       - "kitty"
-      - "ngrok"
-      - "stats"
+      # - "ngrok"
+      # - "stats"
       - "virtualbox"
-      - "homebrew/cask-fonts/font-jetbrains-mono-nerd-font"
+      - "font-jetbrains-mono-nerd-font"
       - "zed"
       - "rstudio"
 
