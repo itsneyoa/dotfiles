@@ -66,3 +66,7 @@ function __run_onefetch_on_new_directory --on-event fish_prompt
     end
     set -gx last_repository $current_repository
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
