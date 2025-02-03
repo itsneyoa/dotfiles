@@ -27,7 +27,6 @@ packages:
       - "kondo" # Dependency / build artifact cleaner
       - "lf" # Terminal file manager
       - "llvm" # Compiler infrastructure
-      - "mold" # Faster linker
       - "mosh" # Mobile shell
       - "neofetch" # System information
       - "nmap" # Network scanner
