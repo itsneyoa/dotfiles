@@ -5,3 +5,5 @@ show_help = false
 sync_frequency = "5m"
 update_check = false
 filter_mode_shell_up_key_binding = "session"
+inline_height = "0"
+style = "auto"
