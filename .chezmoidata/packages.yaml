@@ -60,6 +60,8 @@ packages:
     - "flamegraph" # Stack trace viewer
     - "cargo-nextest" # Better `cargo test`
     - "cargo-audit" # Audit dependencies
+    - "cargo-bloat" # Executable storage analysis
+    - "dysk" # Utility for listing filesystems
 
   nix:
     - "atuin" # Shell history
