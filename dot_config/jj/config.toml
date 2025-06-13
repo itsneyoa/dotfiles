@@ -1,0 +1,7 @@
+[user]
+name = "Lily Smart"
+email = "hello@neyoa.me"
+
+[ui]
+default-command = ["log", "--reversed"]
+paginate = "never"
