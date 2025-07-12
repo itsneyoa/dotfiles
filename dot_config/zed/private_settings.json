@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "auto_update_extensions": {
+    "biome": false
+  },
   "features": {
     "copilot": false,
     "edit_prediction_provider": "none"
@@ -16,7 +19,7 @@
     "version": "2"
   }, */
   "base_keymap": "VSCode",
-  "theme": "Zedokai Darker (Filter Spectrum)",
+  "theme": "Catppuccin Mocha",
   "telemetry": {
     "metrics": false
   },
@@ -33,6 +36,11 @@
         "checkOnSave": {
           "command": "clippy" // rust-analyzer.checkOnSave.command
         }
+      }
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true
       }
     }
   },
