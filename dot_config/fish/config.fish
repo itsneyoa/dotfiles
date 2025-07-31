@@ -15,7 +15,6 @@ end
 if status --is-interactive
     zoxide init fish | source
     fzf --fish | source
-    fnm env --use-on-cd --corepack-enabled | source
     if test "$TERM" != dumb
         starship init fish | source
     end
@@ -54,10 +53,6 @@ if type -q radian
     alias r radian
 end
 
-if type -q fnm
-    alias nvm fnm
-end
-
 # Run onefetch on new directory
 function __run_onefetch_on_new_directory --on-event fish_prompt
     set current_repository (git rev-parse --show-toplevel 2> /dev/null)
@@ -66,7 +61,3 @@ function __run_onefetch_on_new_directory --on-event fish_prompt
     end
     set -gx last_repository $current_repository
 end
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
