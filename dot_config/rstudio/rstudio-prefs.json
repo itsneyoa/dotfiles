@@ -1,0 +1,21 @@
+{
+    "initial_working_directory": "~",
+    "posix_terminal_shell": "custom",
+    "editor_theme": "ayu dark",
+    "jobs_tab_visibility": "shown",
+    "enable_splash_screen": false,
+    "default_open_project_location": "~/Code",
+    "rainbow_parentheses": true,
+    "reformat_on_save": true,
+    "strip_trailing_whitespace": true,
+    "line_ending_conversion": "posix",
+    "code_formatter": "styler",
+    "syntax_color_console": true,
+    "spelling_dictionary_language": "en_GB",
+    "custom_shell_command": "/opt/homebrew/Cellar/fish/4.1.1/bin/fish",
+    "default_project_location": "~/Library/CloudStorage/OneDrive-NewcastleUniversity/Documents/BMS3025/R",
+    "highlight_selected_line": true,
+    "show_margin": false,
+    "console_double_click_select": true,
+    "terminal_close_behavior": "clean"
+}
