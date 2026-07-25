@@ -73,32 +73,43 @@ style = "fg:#000000 bg:#f05033"
 format = "[$output ]($style)[](fg:#f05033)"
 
 [custom.jj]
+command = "prompt"
 ignore_timeout = true
-description = "The current jj status"
+shell = ["starship-jj", "--ignore-working-copy", "starship"]
 format = "[](fg:#4051B5 inverted)[ $symbol $output ]($style)[](fg:#4051B5)"
 style = "bg:#4051B5 fg:#ffffff"
 detect_folders = [".jj"]
-symbol = "🥋 "
-command = '''
-jj log --revisions @ --no-graph --ignore-working-copy --color never --limit 1 --template '
-  separate(" ",
-    change_id.shortest(4),
-    bookmarks,
-    "|",
-    concat(
-      if(conflict, "💥"),
-      if(divergent, "🚧"),
-      if(hidden, "👻"),
-      if(immutable, "🔒"),
-    ),
-    if(empty, "(empty)"),
-    coalesce(
-      truncate_end(29, description.first_line(), "…"),
-      "(no description set)",
-    )
-  )
-'
-'''
+symbol = "🥋"
+use_stdin = false
+# when = true
+
+# [custom.jj]
+# ignore_timeout = true
+# description = "The current jj status"
+# format = "[](fg:#4051B5 inverted)[ $symbol $output ]($style)[](fg:#4051B5)"
+# style = "bg:#4051B5 fg:#ffffff"
+# detect_folders = [".jj"]
+# symbol = "🥋 "
+# command = '''
+# jj log --revisions @ --no-graph --ignore-working-copy --color never --limit 1 --template '
+#   separate(" ",
+#     change_id.shortest(4),
+#     bookmarks,
+#     "|",
+#     concat(
+#       if(conflict, "💥"),
+#       if(divergent, "🚧"),
+#       if(hidden, "👻"),
+#       if(immutable, "🔒"),
+#     ),
+#     if(empty, "(empty)"),
+#     coalesce(
+#       truncate_end(29, description.first_line(), "…"),
+#       "(no description set)",
+#     )
+#   )
+# '
+# '''
 
 
 [vagrant]
@@ -173,4 +184,4 @@ format = "[](fg:#444444)[ $symbol ($number )]($style)[](fg:#444444 inverte
 disabled = false
 time_format = "%-I:%M %p"
 style = "fg:#000000 bg:#D3D7CF"
-format = "[](fg:#D3D7CF)[ $time ]($style)[](fg:#D3D7CF)"
+format = "[](fg:#D3D7CF)[ $time]($style )[](fg:#D3D7CF)"

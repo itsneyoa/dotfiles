@@ -1,5 +1,5 @@
 [language-server.rust-analyzer.config.check]
-command = "clippy"
+#command = "clippy"
 
 [[language]]
 name = "nix"

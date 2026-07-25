@@ -1,0 +1,101 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "colorize_brackets": true,
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+  },
+  "git": {
+    "disable_git": false,
+  },
+  "proxy": "",
+  "disable_ai": true,
+  "minimap": {
+    "show": "never",
+  },
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "which_key": {
+    "enabled": true,
+  },
+  "on_last_window_closed": "quit_app",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "buffer_line_height": "comfortable",
+  "icon_theme": "Zed (Default)",
+  "edit_predictions": {
+    "provider": "none",
+  },
+  "auto_update_extensions": {
+    "biome": false,
+  },
+  "base_keymap": "VSCode",
+  "theme": "Catppuccin Mocha",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 15,
+  "autosave": "on_focus_change",
+  "ensure_final_newline_on_save": true,
+  "format_on_save": "on",
+  "buffer_font_family": "DepartureMono Nerd Font Mono",
+  "buffer_font_size": 12,
+  "ui_font_family": "DepartureMono Nerd Font",
+  "confirm_quit": false,
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": true,
+        "check": {
+          "command": "clippy",
+        },
+      },
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+      },
+    },
+  },
+  "inlay_hints": {
+    "show_value_hints": true,
+    "show_type_hints": true,
+    "enabled": true,
+  },
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false,
+  },
+  "agent": {
+    "dock": "right",
+    "button": false,
+  },
+  "ssh_connections": [
+    {
+      "host": "lilys-desktop",
+      "username": "lily",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/lily/Code/vanillin"],
+        },
+      ],
+      "nickname": "Desktop",
+    },
+  ],
+}
