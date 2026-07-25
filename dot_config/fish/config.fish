@@ -15,10 +15,11 @@ end
 if status --is-interactive
     zoxide init fish | source
     fzf --fish | source
+    fnm env --use-on-cd --corepack-enabled | source
     if test "$TERM" != dumb
         starship init fish | source
     end
-    atuin init fish | source
+    #atuin init fish | source
 end
 # direnv hook fish | source
 
@@ -29,7 +30,7 @@ abbr --add j just
 alias reload 'exec fish'
 
 if type -q eza
-    alias ls "eza -F --icons"
+    alias ls "eza -F --icons=auto"
     alias la "ls -a"
     alias ll "la -lh --no-filesize --no-time"
     alias lt "ls -T"
@@ -49,8 +50,8 @@ else if type -q bat
     alias cat bat
 end
 
-if type -q radian
-    alias r radian
+if type -q fnm
+    alias nvm fnm
 end
 
 # Run onefetch on new directory
@@ -60,4 +61,15 @@ function __run_onefetch_on_new_directory --on-event fish_prompt
         onefetch
     end
     set -gx last_repository $current_repository
+end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# Created by `pipx` on 2025-10-19 14:00:59
+set PATH $PATH /Users/lily/.local/bin
+
+if type -q radian
+    alias r radian
 end
