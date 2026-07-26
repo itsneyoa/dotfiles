@@ -1,7 +1,12 @@
 [user]
 name = "Lily Smart"
-email = "hello@neyoa.me"
+email = "lily@neyoa.me"
 
 [ui]
 default-command = ["log", "--reversed"]
 paginate = "never"
+
+[signing]
+behavior = "own"
+backend = "ssh"
+key = "~/.ssh/id_ed25519.pub"
